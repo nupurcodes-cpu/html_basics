@@ -1,0 +1,10 @@
+*{                      /*Universal Selector, selects every single element*/
+            margin: 0;          /*Browsers add default margins and paddings to certain elements */
+            padding: 0;         /*(like body, headings, paragraphs, and lists). This resets them all to zero, giving you total control over your layout spacing.*/
+            box-sizing: border-box;
+        }
+
+        html,body{
+            width: 100%;        /*Yeh ensure karta hai ki dono elements browser viewport (screen) ki poori width aur height ko cover karein.*/
+            height: 100%;
+        }
