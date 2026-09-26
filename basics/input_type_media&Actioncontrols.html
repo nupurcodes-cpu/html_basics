@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media & Action Controls Demo</title>
+  <style>
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .button-group {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="/upload-endpoint" method="POST" enctype="multipart/form-data">
+    <h2>Job Application Form</h2>
+
+    <!-- Text Input (To demonstrate reset functionality) -->
+    <div class="form-group">
+      <label for="applicant_name">Full Name:</label>
+      <input type="text" id="applicant_name" name="applicant_name" placeholder="John Doe">
+    </div>
+
+    <!-- 1. File Upload -->
+    <div class="form-group">
+      <label for="resume">Upload Resume & Certificates (Multiple Files):</label>
+      <input type="file" id="resume" name="documents" multiple accept=".pdf,.doc,.docx">
+    </div>
+
+    <div class="button-group">
+      <!-- 2. Submit Button -->
+      <input type="submit" value="Submit Application">
+
+      <!-- 3. Reset Button -->
+      <input type="reset" value="Clear Form">
+
+      <!-- 4. Generic Button -->
+      <input type="button" value="Show Help" onclick="alert('Please upload PDF or DOC files under 5MB.')">
+    </div>
+
+    <br><hr><br>
+
+    <!-- 5. Image Button (Functions as a submission button with an image) -->
+    <div class="form-group">
+      <label>Quick Submit via Custom Image Button:</label>
+      <input type="image" src="https://via.placeholder.com/150x40?text=Submit+Now" alt="Submit Form">
+    </div>
+
+  </form>
+
+</body>
+</html>

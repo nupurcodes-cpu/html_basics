@@ -36,3 +36,67 @@ Yeh tags text ka visual look, font style, ya placement change karne ke liye use 
                                 <pre>: Preformatted text — code me jaise spaces aur line breaks likhe hain, waise ka waisa screen par dikhata hai.   
                                     <code>: Computer programming code ko monospaced font me dikhane ke liye.   
                                         <br> / <br/>: Line break — text me nayi line lane ke liye (yeh self-closing tag hai).  -->
+
+
+
+<input> tag is one of the most versatile and powerful elements in HTML. 
+By simply changing its type attribute, you can create dozens of different interactive form controls to accept user input.  
+
+Here is a breakdown of everything you can build using the <input> tag:
+
+1. Text & Freeform Inputs:
+Used for entering plain text, numbers, or standard user credentials.
+
+Single-line Text (type="text"): Standard text field for names, titles, etc.
+
+Password (type="password"): Masks entered characters (dots or asterisks) for privacy.
+
+Email (type="email"): Validates that the user entered a proper email format (user@example.com).
+
+Telephone (type="tel"): Optimized for phone numbers (triggers numerical keypads on mobile devices).
+
+URL (type="url"): Ensures the entered value is a valid website address.
+
+Number (type="number"): Accepts only numeric values with options to set minimum (min), maximum (max), and increment steps (step).
+
+Search (type="search"): A text field styled specifically for search bars (often includes a quick "X" button to clear text).
+
+
+2. Selection & Toggle Controls
+Used when users need to select one or multiple choices from a list.
+
+Checkbox (type="checkbox"): Allows selecting zero, one, or multiple options (e.g., "Agree to terms", "Select interests").
+
+Radio Button (type="radio"): Allows selecting only one option from a group sharing the same name attribute.
+
+Range Slider (type="range"): A visual slider control to select a value within a range (e.g., volume control, price filters).
+
+
+3. Date, Time & Color Pickers
+Provides built-in browser widgets for picking dates, times, or colors without needing custom JavaScript.
+
+Date (type="date"): Opens a calendar picker to choose a day, month, and year.
+
+Time (type="time"): Displays a time picker (hours, minutes, AM/PM).
+
+Date & Time (type="datetime-local"): Combines both date and local time selection.
+
+Month (type="month"): Allows picking a specific month and year.
+
+Week (type="week"): Allows selecting a specific week number and year.
+
+Color Picker (type="color"): Opens a native color picker tool to select a hex color code.
+
+
+4. Media & Action Controls
+Used for uploading files or submitting data within forms.
+
+File Upload (type="file"): Allows users to upload documents or images from their device (can support single or multiple files using multiple).
+
+Submit Button (type="submit"): Creates a button that submits the parent <form> data to the server.
+
+Reset Button (type="reset"): Resets all fields inside the parent form back to their default values.
+
+Generic Button (type="button"): A plain button that can be assigned custom actions using JavaScript.
+
+Image Button (type="image"): Creates a clickable image that functions as a submit button (uses src="").
